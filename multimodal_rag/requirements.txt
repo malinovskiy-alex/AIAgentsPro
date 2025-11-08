@@ -1,0 +1,15 @@
+# Multimodal RAG Dependencies
+# =============================
+
+# Vector Database
+chromadb>=0.4.0
+
+# CLIP Model & Embeddings
+sentence-transformers>=2.2.0
+torch>=2.0.0
+
+# Image Processing
+pillow>=10.0.0
+
+# Optional but recommended
+numpy>=1.24.0
