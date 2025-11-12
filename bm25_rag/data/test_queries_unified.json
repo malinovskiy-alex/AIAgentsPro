@@ -1,0 +1,719 @@
+{
+  "metadata": {
+    "description": "Уніфікований тестовий датасет для всіх RAG підходів",
+    "total_queries": 100,
+    "categories": [
+      "definition",
+      "technical",
+      "approaches",
+      "evaluation",
+      "challenges",
+      "implementation",
+      "comparison",
+      "optimization"
+    ],
+    "purpose": "Однакові запити для коректного порівняння різних RAG систем"
+  },
+  "queries": [
+    {
+      "id": 1,
+      "category": "definition",
+      "question": "What is Retrieval-Augmented Generation (RAG)?",
+      "difficulty": "easy",
+      "expected_concepts": ["retrieval", "generation", "LLM", "external knowledge"]
+    },
+    {
+      "id": 2,
+      "category": "definition",
+      "question": "What are the main components of a RAG system?",
+      "difficulty": "easy",
+      "expected_concepts": ["retriever", "generator", "knowledge base"]
+    },
+    {
+      "id": 3,
+      "category": "definition",
+      "question": "How does RAG differ from traditional LLMs?",
+      "difficulty": "medium",
+      "expected_concepts": ["external knowledge", "parametric knowledge", "grounding"]
+    },
+    {
+      "id": 4,
+      "category": "definition",
+      "question": "What is the purpose of the retrieval component in RAG?",
+      "difficulty": "easy",
+      "expected_concepts": ["relevant documents", "context", "knowledge base search"]
+    },
+    {
+      "id": 5,
+      "category": "definition",
+      "question": "Explain the concept of grounding in RAG systems",
+      "difficulty": "medium",
+      "expected_concepts": ["factual accuracy", "source attribution", "hallucination prevention"]
+    },
+    {
+      "id": 6,
+      "category": "technical",
+      "question": "How does the retrieval mechanism work in RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["embeddings", "similarity search", "vector database"]
+    },
+    {
+      "id": 7,
+      "category": "technical",
+      "question": "What is the role of embeddings in RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["semantic representation", "vector space", "similarity"]
+    },
+    {
+      "id": 8,
+      "category": "technical",
+      "question": "Explain how dense retrieval works in RAG",
+      "difficulty": "hard",
+      "expected_concepts": ["dense vectors", "neural encoders", "approximate nearest neighbor"]
+    },
+    {
+      "id": 9,
+      "category": "technical",
+      "question": "What is the difference between sparse and dense retrieval?",
+      "difficulty": "medium",
+      "expected_concepts": ["keyword matching", "semantic similarity", "BM25", "embeddings"]
+    },
+    {
+      "id": 10,
+      "category": "technical",
+      "question": "How does chunking strategy affect RAG performance?",
+      "difficulty": "hard",
+      "expected_concepts": ["chunk size", "overlap", "context window", "granularity"]
+    },
+    {
+      "id": 11,
+      "category": "approaches",
+      "question": "What is Self-RAG and how does it differ from standard RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["adaptive retrieval", "self-reflection", "critique"]
+    },
+    {
+      "id": 12,
+      "category": "approaches",
+      "question": "Explain the concept of Corrective RAG (CRAG)",
+      "difficulty": "hard",
+      "expected_concepts": ["relevance evaluation", "web search fallback", "iterative refinement"]
+    },
+    {
+      "id": 13,
+      "category": "approaches",
+      "question": "How does Hybrid RAG combine different retrieval methods?",
+      "difficulty": "medium",
+      "expected_concepts": ["sparse retrieval", "dense retrieval", "fusion", "reciprocal rank"]
+    },
+    {
+      "id": 14,
+      "category": "approaches",
+      "question": "What is the advantage of query rewriting in RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["query expansion", "reformulation", "multiple perspectives"]
+    },
+    {
+      "id": 15,
+      "category": "approaches",
+      "question": "Explain the re-ranking stage in Advanced RAG",
+      "difficulty": "medium",
+      "expected_concepts": ["relevance scoring", "cross-encoder", "reordering"]
+    },
+    {
+      "id": 16,
+      "category": "evaluation",
+      "question": "What metrics should be used to evaluate RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["faithfulness", "relevancy", "precision", "recall"]
+    },
+    {
+      "id": 17,
+      "category": "evaluation",
+      "question": "How do you measure faithfulness in RAG outputs?",
+      "difficulty": "hard",
+      "expected_concepts": ["grounding verification", "hallucination detection", "source alignment"]
+    },
+    {
+      "id": 18,
+      "category": "evaluation",
+      "question": "What is RAGAS and how is it used for RAG evaluation?",
+      "difficulty": "hard",
+      "expected_concepts": ["automated metrics", "LLM-based evaluation", "context relevance"]
+    },
+    {
+      "id": 19,
+      "category": "evaluation",
+      "question": "Explain the difference between retrieval and generation metrics",
+      "difficulty": "medium",
+      "expected_concepts": ["recall at k", "precision", "answer quality", "relevance"]
+    },
+    {
+      "id": 20,
+      "category": "evaluation",
+      "question": "How can we detect hallucinations in RAG systems?",
+      "difficulty": "hard",
+      "expected_concepts": ["fact verification", "source checking", "consistency"]
+    },
+    {
+      "id": 21,
+      "category": "challenges",
+      "question": "What is the Lost in the Middle problem in RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["context length", "attention mechanism", "position bias"]
+    },
+    {
+      "id": 22,
+      "category": "challenges",
+      "question": "How does context length affect RAG performance?",
+      "difficulty": "medium",
+      "expected_concepts": ["token limits", "information density", "relevance ranking"]
+    },
+    {
+      "id": 23,
+      "category": "challenges",
+      "question": "What are the common failure modes of RAG systems?",
+      "difficulty": "hard",
+      "expected_concepts": ["retrieval failure", "hallucination", "irrelevant context"]
+    },
+    {
+      "id": 24,
+      "category": "challenges",
+      "question": "How can RAG systems handle multi-hop reasoning?",
+      "difficulty": "hard",
+      "expected_concepts": ["iterative retrieval", "chain of thought", "decomposition"]
+    },
+    {
+      "id": 25,
+      "category": "challenges",
+      "question": "What are the scalability challenges in RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["index size", "latency", "computational cost"]
+    },
+    {
+      "id": 26,
+      "category": "implementation",
+      "question": "What is the optimal chunk size for RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["context granularity", "retrieval precision", "trade-offs"]
+    },
+    {
+      "id": 27,
+      "category": "implementation",
+      "question": "How should chunk overlap be configured in RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["context continuity", "redundancy", "boundary issues"]
+    },
+    {
+      "id": 28,
+      "category": "implementation",
+      "question": "What embedding models are best for RAG retrieval?",
+      "difficulty": "medium",
+      "expected_concepts": ["BERT", "sentence transformers", "domain adaptation"]
+    },
+    {
+      "id": 29,
+      "category": "implementation",
+      "question": "How do you choose the number of retrieved documents (top-k)?",
+      "difficulty": "medium",
+      "expected_concepts": ["precision-recall trade-off", "context window", "relevance threshold"]
+    },
+    {
+      "id": 30,
+      "category": "implementation",
+      "question": "What vector databases are commonly used for RAG?",
+      "difficulty": "easy",
+      "expected_concepts": ["FAISS", "Pinecone", "Weaviate", "Chroma"]
+    },
+    {
+      "id": 31,
+      "category": "comparison",
+      "question": "Compare BM25 and dense vector retrieval methods",
+      "difficulty": "medium",
+      "expected_concepts": ["keyword matching", "semantic similarity", "speed", "accuracy"]
+    },
+    {
+      "id": 32,
+      "category": "comparison",
+      "question": "When should you use Naive RAG vs Advanced RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["simplicity", "accuracy requirements", "latency constraints"]
+    },
+    {
+      "id": 33,
+      "category": "comparison",
+      "question": "Compare Self-RAG with Corrective RAG approaches",
+      "difficulty": "hard",
+      "expected_concepts": ["adaptive retrieval", "self-reflection", "external knowledge"]
+    },
+    {
+      "id": 34,
+      "category": "comparison",
+      "question": "What are the trade-offs between hybrid and pure dense retrieval?",
+      "difficulty": "medium",
+      "expected_concepts": ["complexity", "accuracy", "computational cost"]
+    },
+    {
+      "id": 35,
+      "category": "comparison",
+      "question": "Compare single-stage vs multi-stage retrieval in RAG",
+      "difficulty": "hard",
+      "expected_concepts": ["candidate generation", "re-ranking", "precision-recall"]
+    },
+    {
+      "id": 36,
+      "category": "optimization",
+      "question": "How can we improve retrieval quality in RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["better embeddings", "query expansion", "re-ranking"]
+    },
+    {
+      "id": 37,
+      "category": "optimization",
+      "question": "What techniques reduce hallucinations in RAG systems?",
+      "difficulty": "hard",
+      "expected_concepts": ["grounding", "attribution", "confidence scoring"]
+    },
+    {
+      "id": 38,
+      "category": "optimization",
+      "question": "How can we optimize RAG for low-latency applications?",
+      "difficulty": "hard",
+      "expected_concepts": ["caching", "approximate search", "smaller models"]
+    },
+    {
+      "id": 39,
+      "category": "optimization",
+      "question": "What is context compression in RAG and why is it useful?",
+      "difficulty": "hard",
+      "expected_concepts": ["token efficiency", "information density", "summarization"]
+    },
+    {
+      "id": 40,
+      "category": "optimization",
+      "question": "How does prompt engineering affect RAG quality?",
+      "difficulty": "medium",
+      "expected_concepts": ["instruction clarity", "output format", "few-shot examples"]
+    },
+    {
+      "id": 41,
+      "category": "technical",
+      "question": "What is the role of the retriever in RAG architecture?",
+      "difficulty": "easy",
+      "expected_concepts": ["document selection", "relevance ranking", "context provision"]
+    },
+    {
+      "id": 42,
+      "category": "technical",
+      "question": "Explain the concept of semantic search in RAG",
+      "difficulty": "medium",
+      "expected_concepts": ["meaning-based retrieval", "embedding similarity", "context understanding"]
+    },
+    {
+      "id": 43,
+      "category": "technical",
+      "question": "How do attention mechanisms work in RAG systems?",
+      "difficulty": "hard",
+      "expected_concepts": ["transformer architecture", "context weighting", "relevance focus"]
+    },
+    {
+      "id": 44,
+      "category": "technical",
+      "question": "What is the purpose of document encoding in RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["vector representation", "semantic capture", "efficient search"]
+    },
+    {
+      "id": 45,
+      "category": "technical",
+      "question": "How does RAG handle out-of-domain queries?",
+      "difficulty": "hard",
+      "expected_concepts": ["domain adaptation", "fallback mechanisms", "uncertainty"]
+    },
+    {
+      "id": 46,
+      "category": "approaches",
+      "question": "What is iterative RAG and when is it beneficial?",
+      "difficulty": "hard",
+      "expected_concepts": ["multi-step retrieval", "refinement", "complex queries"]
+    },
+    {
+      "id": 47,
+      "category": "approaches",
+      "question": "Explain the concept of fusion in hybrid RAG systems",
+      "difficulty": "medium",
+      "expected_concepts": ["score combination", "reciprocal rank fusion", "weighted merging"]
+    },
+    {
+      "id": 48,
+      "category": "approaches",
+      "question": "What is adaptive retrieval in Self-RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["dynamic decision", "retrieval necessity", "confidence-based"]
+    },
+    {
+      "id": 49,
+      "category": "approaches",
+      "question": "How does context enrichment improve RAG performance?",
+      "difficulty": "medium",
+      "expected_concepts": ["neighboring chunks", "expanded context", "coherence"]
+    },
+    {
+      "id": 50,
+      "category": "approaches",
+      "question": "What is the role of web search in Corrective RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["external knowledge", "fallback mechanism", "completeness"]
+    },
+    {
+      "id": 51,
+      "category": "evaluation",
+      "question": "How do you measure context relevance in RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["precision at k", "relevance scoring", "ground truth comparison"]
+    },
+    {
+      "id": 52,
+      "category": "evaluation",
+      "question": "What is the difference between intrinsic and extrinsic RAG evaluation?",
+      "difficulty": "hard",
+      "expected_concepts": ["component testing", "end-to-end quality", "task performance"]
+    },
+    {
+      "id": 53,
+      "category": "evaluation",
+      "question": "How can synthetic data be used for RAG evaluation?",
+      "difficulty": "hard",
+      "expected_concepts": ["test generation", "controlled experiments", "RAGAS"]
+    },
+    {
+      "id": 54,
+      "category": "evaluation",
+      "question": "What are the key performance indicators for RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["accuracy", "latency", "faithfulness", "user satisfaction"]
+    },
+    {
+      "id": 55,
+      "category": "evaluation",
+      "question": "How do you evaluate the retrieval component separately?",
+      "difficulty": "medium",
+      "expected_concepts": ["recall", "precision", "nDCG", "relevance judgment"]
+    },
+    {
+      "id": 56,
+      "category": "challenges",
+      "question": "What are the privacy concerns with RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["data leakage", "sensitive information", "access control"]
+    },
+    {
+      "id": 57,
+      "category": "challenges",
+      "question": "How does RAG handle contradictory information in documents?",
+      "difficulty": "hard",
+      "expected_concepts": ["conflict resolution", "source credibility", "temporal ordering"]
+    },
+    {
+      "id": 58,
+      "category": "challenges",
+      "question": "What are the computational costs of RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["embedding generation", "search operations", "LLM inference"]
+    },
+    {
+      "id": 59,
+      "category": "challenges",
+      "question": "How can RAG systems maintain factual consistency?",
+      "difficulty": "hard",
+      "expected_concepts": ["grounding", "verification", "attribution"]
+    },
+    {
+      "id": 60,
+      "category": "challenges",
+      "question": "What happens when RAG retrieves no relevant documents?",
+      "difficulty": "medium",
+      "expected_concepts": ["fallback behavior", "abstention", "uncertainty handling"]
+    },
+    {
+      "id": 61,
+      "category": "implementation",
+      "question": "How do you handle document updates in RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["incremental indexing", "version control", "cache invalidation"]
+    },
+    {
+      "id": 62,
+      "category": "implementation",
+      "question": "What preprocessing steps are important for RAG documents?",
+      "difficulty": "medium",
+      "expected_concepts": ["cleaning", "chunking", "metadata extraction"]
+    },
+    {
+      "id": 63,
+      "category": "implementation",
+      "question": "How do you implement caching in RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["query caching", "embedding caching", "result caching"]
+    },
+    {
+      "id": 64,
+      "category": "implementation",
+      "question": "What are the best practices for RAG prompt design?",
+      "difficulty": "medium",
+      "expected_concepts": ["context formatting", "instruction clarity", "output structure"]
+    },
+    {
+      "id": 65,
+      "category": "implementation",
+      "question": "How do you monitor RAG system performance in production?",
+      "difficulty": "medium",
+      "expected_concepts": ["logging", "metrics tracking", "user feedback"]
+    },
+    {
+      "id": 66,
+      "category": "comparison",
+      "question": "Compare FAISS and traditional database search for RAG",
+      "difficulty": "medium",
+      "expected_concepts": ["vector similarity", "approximate search", "scalability"]
+    },
+    {
+      "id": 67,
+      "category": "comparison",
+      "question": "What are the differences between RAG and fine-tuning?",
+      "difficulty": "medium",
+      "expected_concepts": ["external knowledge", "model parameters", "update flexibility"]
+    },
+    {
+      "id": 68,
+      "category": "comparison",
+      "question": "Compare single-vector vs multi-vector retrieval",
+      "difficulty": "hard",
+      "expected_concepts": ["granularity", "precision", "ColBERT", "late interaction"]
+    },
+    {
+      "id": 69,
+      "category": "comparison",
+      "question": "When should you use graph-based RAG vs vector RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["relationship modeling", "entity connections", "traversal"]
+    },
+    {
+      "id": 70,
+      "category": "comparison",
+      "question": "Compare closed-book vs open-book QA in context of RAG",
+      "difficulty": "medium",
+      "expected_concepts": ["parametric knowledge", "retrieval augmentation", "accuracy"]
+    },
+    {
+      "id": 71,
+      "category": "optimization",
+      "question": "How can you reduce the number of false positives in retrieval?",
+      "difficulty": "medium",
+      "expected_concepts": ["threshold tuning", "re-ranking", "semantic filtering"]
+    },
+    {
+      "id": 72,
+      "category": "optimization",
+      "question": "What strategies improve RAG answer quality?",
+      "difficulty": "medium",
+      "expected_concepts": ["context selection", "prompt engineering", "model choice"]
+    },
+    {
+      "id": 73,
+      "category": "optimization",
+      "question": "How do you balance precision and recall in RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["threshold adjustment", "top-k tuning", "hybrid approaches"]
+    },
+    {
+      "id": 74,
+      "category": "optimization",
+      "question": "What techniques reduce latency in RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["approximate search", "caching", "model optimization"]
+    },
+    {
+      "id": 75,
+      "category": "optimization",
+      "question": "How can you improve RAG performance on rare queries?",
+      "difficulty": "hard",
+      "expected_concepts": ["query expansion", "fallback strategies", "long-tail handling"]
+    },
+    {
+      "id": 76,
+      "category": "definition",
+      "question": "What is the difference between extractive and abstractive RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["direct copying", "paraphrasing", "generation flexibility"]
+    },
+    {
+      "id": 77,
+      "category": "definition",
+      "question": "Explain the concept of knowledge-grounded generation",
+      "difficulty": "medium",
+      "expected_concepts": ["external evidence", "factual basis", "attribution"]
+    },
+    {
+      "id": 78,
+      "category": "definition",
+      "question": "What does it mean for a RAG system to be faithful?",
+      "difficulty": "medium",
+      "expected_concepts": ["source adherence", "no hallucination", "verifiability"]
+    },
+    {
+      "id": 79,
+      "category": "definition",
+      "question": "What is the retrieval-generation trade-off?",
+      "difficulty": "hard",
+      "expected_concepts": ["context quality vs quantity", "latency vs accuracy"]
+    },
+    {
+      "id": 80,
+      "category": "definition",
+      "question": "Explain parametric vs non-parametric knowledge in RAG",
+      "difficulty": "hard",
+      "expected_concepts": ["model weights", "external documents", "updateability"]
+    },
+    {
+      "id": 81,
+      "category": "technical",
+      "question": "How does approximate nearest neighbor search work in RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["HNSW", "IVF", "speed-accuracy trade-off"]
+    },
+    {
+      "id": 82,
+      "category": "technical",
+      "question": "What is the role of metadata in RAG retrieval?",
+      "difficulty": "medium",
+      "expected_concepts": ["filtering", "boosting", "hybrid signals"]
+    },
+    {
+      "id": 83,
+      "category": "technical",
+      "question": "How do cross-encoders improve RAG re-ranking?",
+      "difficulty": "hard",
+      "expected_concepts": ["joint encoding", "interaction modeling", "accuracy improvement"]
+    },
+    {
+      "id": 84,
+      "category": "technical",
+      "question": "What is document-level vs passage-level retrieval?",
+      "difficulty": "medium",
+      "expected_concepts": ["granularity", "context scope", "precision trade-offs"]
+    },
+    {
+      "id": 85,
+      "category": "technical",
+      "question": "How does negative sampling affect RAG training?",
+      "difficulty": "hard",
+      "expected_concepts": ["contrastive learning", "hard negatives", "model quality"]
+    },
+    {
+      "id": 86,
+      "category": "approaches",
+      "question": "What is multi-hop retrieval in RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["iterative search", "chain reasoning", "information aggregation"]
+    },
+    {
+      "id": 87,
+      "category": "approaches",
+      "question": "Explain the concept of retrieve-and-refine in RAG",
+      "difficulty": "medium",
+      "expected_concepts": ["iterative improvement", "feedback loop", "quality enhancement"]
+    },
+    {
+      "id": 88,
+      "category": "approaches",
+      "question": "What is the difference between early and late fusion in hybrid RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["score combination timing", "representation mixing", "effectiveness"]
+    },
+    {
+      "id": 89,
+      "category": "approaches",
+      "question": "How does RAG-Fusion improve retrieval diversity?",
+      "difficulty": "hard",
+      "expected_concepts": ["query generation", "parallel retrieval", "reciprocal ranking"]
+    },
+    {
+      "id": 90,
+      "category": "approaches",
+      "question": "What is parent document retrieval in RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["chunk-document relationship", "context expansion", "coherence"]
+    },
+    {
+      "id": 91,
+      "category": "evaluation",
+      "question": "How do you measure retrieval diversity in RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["MMR", "coverage", "redundancy reduction"]
+    },
+    {
+      "id": 92,
+      "category": "evaluation",
+      "question": "What is the role of human evaluation in RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["quality assessment", "metric validation", "edge cases"]
+    },
+    {
+      "id": 93,
+      "category": "evaluation",
+      "question": "How do you create a benchmark dataset for RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["query collection", "ground truth annotation", "diversity"]
+    },
+    {
+      "id": 94,
+      "category": "evaluation",
+      "question": "What are the limitations of automated RAG metrics?",
+      "difficulty": "medium",
+      "expected_concepts": ["correlation with human judgment", "edge cases", "gaming"]
+    },
+    {
+      "id": 95,
+      "category": "evaluation",
+      "question": "How do you evaluate RAG on multi-turn conversations?",
+      "difficulty": "hard",
+      "expected_concepts": ["context tracking", "coherence", "information accumulation"]
+    },
+    {
+      "id": 96,
+      "category": "challenges",
+      "question": "How does RAG handle ambiguous queries?",
+      "difficulty": "medium",
+      "expected_concepts": ["clarification", "multiple interpretations", "ranking"]
+    },
+    {
+      "id": 97,
+      "category": "challenges",
+      "question": "What are the challenges of multilingual RAG?",
+      "difficulty": "hard",
+      "expected_concepts": ["cross-lingual retrieval", "translation", "language-specific models"]
+    },
+    {
+      "id": 98,
+      "category": "challenges",
+      "question": "How can RAG systems handle time-sensitive information?",
+      "difficulty": "hard",
+      "expected_concepts": ["temporal filtering", "freshness", "version control"]
+    },
+    {
+      "id": 99,
+      "category": "challenges",
+      "question": "What are the ethical considerations in RAG systems?",
+      "difficulty": "medium",
+      "expected_concepts": ["bias", "fairness", "transparency", "privacy"]
+    },
+    {
+      "id": 100,
+      "category": "challenges",
+      "question": "How do you handle very long documents in RAG?",
+      "difficulty": "medium",
+      "expected_concepts": ["hierarchical chunking", "summarization", "sliding windows"]
+    }
+  ]
+}

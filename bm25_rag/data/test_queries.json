@@ -1,0 +1,35 @@
+{
+  "definition": [
+    "What is Retrieval-Augmented Generation (RAG) and how does it work?",
+    "Explain the main components of a RAG system",
+    "What are the key advantages of using RAG over traditional language models?"
+  ],
+  "technical": [
+    "How does the retrieval mechanism work in RAG systems?",
+    "What is the role of the retriever in RAG architecture?",
+    "Explain the difference between dense and sparse retrievers in RAG",
+    "How are embeddings used in RAG systems?",
+    "What is the purpose of reranking in advanced RAG?"
+  ],
+  "approaches": [
+    "What is Self-RAG and how does it differ from standard RAG?",
+    "Explain the concept of Corrective RAG (CRAG)",
+    "What is REPLUG and how does it improve RAG performance?",
+    "How does Atlas approach retrieval-augmented generation?",
+    "What are the main differences between naive RAG and advanced RAG?"
+  ],
+  "evaluation": [
+    "How can we evaluate the quality of RAG systems?",
+    "What metrics are commonly used to assess RAG performance?",
+    "What is faithfulness in RAG evaluation?",
+    "How do we measure context precision and recall in RAG?"
+  ],
+  "practical": [
+    "What are the main challenges in implementing RAG systems?",
+    "How can we optimize retrieval performance in production RAG systems?",
+    "What are the trade-offs between different RAG approaches?",
+    "How does query rewriting improve RAG accuracy?",
+    "What is hybrid search and why is it effective in RAG?",
+    "What is the role of chunking in RAG systems?"
+  ]
+}
