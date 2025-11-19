@@ -1,0 +1,16 @@
+# Advanced CrewAI with MCP Sequential Thinking Requirements
+
+# Core frameworks
+crewai>=0.80.0
+crewai-tools[mcp]>=1.3.0
+langchain>=1.0.0
+langchain-openai>=1.0.0
+
+# MCP
+mcp>=1.6.0
+
+# HTTP requests
+requests>=2.31.0
+
+# Utilities
+python-dotenv>=1.0.0
